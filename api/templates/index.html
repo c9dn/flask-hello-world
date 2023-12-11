@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-4xl">URL Shortener</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Enter URL" class="border-2">
+            <input type="submit" value="Shorten" class="bg-blue-500 text-white">
+        </form>
+        {% if short_url %}
+            <p>Your short URL is: <a href="{{ short_url }}">{{ short_url }}</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>
