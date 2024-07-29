@@ -14,11 +14,6 @@ This example uses the Web Server Gateway Interface (WSGI) with Flask to enable h
 
 ## Running Locally
 
-```bash
-npm i -g vercel
-vercel dev
-```
-
 Your Flask application is now available at `http://localhost:3000`.
 
 ## One-Click Deploy
